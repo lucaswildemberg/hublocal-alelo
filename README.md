@@ -5,9 +5,9 @@ Este é um guia passo a passo para executar o Sass e compilar o Bootstrap em tem
 
 bashCopy code
 
-`sass --watch scss/custom.scss:css/bootstrap.css`
+`sass --watch scss/custom.scss:css/style.css`
 
-Este comando irá monitorar o arquivo `custom.scss` em `scss/` e compilar as alterações em tempo real em `css/bootstrap.css`.
+Este comando irá monitorar o arquivo `custom.scss` em `scss/` e compilar as alterações em tempo real em `css/style.css`.
 
 ## Pré-requisitos
 --------------
@@ -28,15 +28,15 @@ Copy code
 
 bashCopy code
 
-`sass --watch scss/custom.scss:css/bootstrap.css`
+`sass --watch scss/custom.scss:css/style.css`
 
-Este comando irá monitorar o arquivo `custom.scss` em `scss/` e compilar as alterações em tempo real em `css/bootstrap.css`.
+Este comando irá monitorar o arquivo `custom.scss` em `scss/` e compilar as alterações em tempo real em `css/style.css`.
 
 1.  Mantenha o terminal aberto enquanto faz alterações em `custom.scss`. O Sass detectará as alterações e recompilará o arquivo automaticamente.
 
 2.  O Sass exibirá informações no terminal a cada vez que compilar o arquivo, incluindo o tempo que levou para compilar e se houve algum erro. Verifique se não houve erros na saída do terminal.
 
-3.  O arquivo `css/bootstrap.css` foi gerado e pode ser referenciado em seu HTML para incluir o Bootstrap em seu projeto.
+3.  O arquivo `css/style.css` foi gerado e pode ser referenciado em seu HTML para incluir o Bootstrap em seu projeto.
 
 ## Conclusão
 ---------
