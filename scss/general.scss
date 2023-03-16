@@ -18,8 +18,10 @@
   background: #00D98C;
   box-shadow: 0 4px 0 $primarias---verde--secundario;
   border-radius: 8px;
+  border-color: $primarias---verde--secundario;
   font-family: $font-family;
   font-weight: $font-weight-medium;
+  font-size: $buttons---medium;
   text-decoration: none;
   color: $branco;
   width: fit-content;
@@ -28,6 +30,7 @@
 
 .btn-primary:hover {
   background: $primarias---verde--secundario;
+  border-color: $primarias---verde--secundario;
   box-shadow: 0 4px 0 $primarias---verde--escuro;
 }
 

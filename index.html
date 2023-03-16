@@ -55,48 +55,43 @@
               <div class="tag">
                 15% OFF para clientes Alelo
               </div>
-              <form name="orc-site-home">
+              <form name="alelo-site-form" method="post">
                 <p class="text-center small mb-4">Preencha o formulário para que um de nossos consultores entre em contato com você.</p>
-                <div class="form-floating mb-3">
-                  <input type="text" name="nome" class="form-control" id="rvb-form-nome" placeholder="Digite seu nome" required="">
-                  <label for="rvb-form-email">Seu nome</label>
-                  <span class="fa fa-user"></span>
+                <div class="mb-3">
+                  <label for="inputNome" class="form-label">Seu nome</label>
+                  <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Digite seu nome completo" required>
                 </div>
-                <div class="form-floating mb-3">
-                  <input type="email" name="email" class="form-control" id="rvb-form-email" placeholder="Digite seu melhor e-mail" required="">
-                  <label for="rvb-form-email">Seu e-mail corporativo</label>
-                  <span class="fa fa-envelope"></span>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">E-mail corporativo</label>
+                  <input type="email" class="form-control" id="inputEmail" name="email" placeholder="exemplo@nomedaempresa.com" required>
                 </div>
-                <div class="form-floating mb-3">
-                  <input type="phone" name="phone" class="form-control" id="rvb-form-telefone" placeholder="Digite seu número de telefone" required="">
-                  <label for="rvb-form-phone">Seu telefone</label>
-                  <span class="fa fa-phone"></span>
+                <div class="mb-3">
+                  <label for="inputTelefone" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="inputTelefone" name="telefone" placeholder="(00) 0 0000-0000" required>
                 </div>
-                <div class="form-floating mb-3">
-                  <input type="text" name="nome" class="form-control" id="rvb-form-nome" placeholder="Nome da sua empresa<" required="">
-                  <label for="rvb-form-email">Nome da empresa</label>
-                  <span class="fa fa-user"></span>
+                <div class="mb-3">
+                  <label for="inputEmpresa" class="form-label">Nome da empresa</label>
+                  <input type="text" class="form-control" id="inputEmpresa" name="empresa" placeholder="Digite o nome da sua empresa" required>
                 </div>
-                <div class="form-floating mb-3 mb-lg-5" style="height: 80px;">
-                  <label for="rvb-form-phone">Sua empresa possui quantos pontos de venda físicos?</label>
-                  <span class="fa fa-chevron-down"></span>
-                  <select class="form-control" style="height: 80px; padding-top: 2.625rem;">
-                    <option disabled selected value> -- Selecione a quantidade -- </option>
-                    <option>1</option>
-                    <option>2-5</option>
-                    <option>5-10</option>
-                    <option>10-30</option>
-                    <option>30-50</option>
-                    <option>50-100</option>
-                    <option>100+</option>
+                <div class="mb-3">
+                  <label for="selectLocais" class="form-label">Sua empresa possui quantos pontos de venda físicos?</label>
+                  <select class="form-select form-control" id="selectLocais" name="locais" aria-label="Sua empresa possui quantos pontos de venda físicos?" required>
+                    <option disabled selected value="">Selecione a quantidade de locais</option>
+                    <option value="nenhum">Nenhum</option>
+                    <option value="1 local">1 local</option>
+                    <option value="2 a 5 locais">2 a 5 locais</option>
+                    <option value="6 a 10 locais">6 a 10 locais</option>
+                    <option value="mais de 10 locais">Mais de 10 locais</option>
                   </select>
                 </div>
                 <div class="mb-3 mb-lg-5">
-                  <input type="checkbox" id="rvb-form-communications" data-privacy="true" name="communications" value="1" required="">
-                  <label for="rvb-form-communications" class="d-inline">Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses.</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkComunicacoes" name="comunicacoes" value="1" required>
+                    <label class="form-check-label" for="checkComunicacoes">Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses.</label>
+                  </div>
                 </div>
-                <a href="" class="btn-primary d-flex justify-content-center w-100">Entrar em contato</a>
-              </form>
+                <button type="submit" class="btn btn-primary d-flex justify-content-center w-100">Entrar em contato</button>
+              </form> 
             </div>
           </div>
         </div>

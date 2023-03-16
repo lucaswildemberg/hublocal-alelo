@@ -151,19 +151,22 @@ label {
   font-size: $fields---label;
   font-family: $font-family;
   font-weight: $font-weight-regular;
+  color: $escala-de--cinza---cinza--escuro;
 }
 
-input[type="text"],
+input,
 textarea {
-  font-size: $desktop---p1;
+  font-size: $desktop---p4;
   font-family: $font-family;
   font-weight: $font-weight-regular;
+  color: #8293A2;
 }
 
 .placeholder {
   font-size: $fields---placeholder;
   font-family: $font-family;
   font-weight: $font-weight-regular;
+  color: #8293A2;
 }
 
 .caption {

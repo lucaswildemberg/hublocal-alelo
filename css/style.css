@@ -10324,18 +10324,21 @@ button {
 label {
   font-size: 0.88rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #052646; }
 
-input[type="text"],
+input,
 textarea {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #8293A2; }
 
 .placeholder {
   font-size: 0.88rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #8293A2; }
 
 .caption {
   font-size: 0.75rem;
@@ -10359,8 +10362,10 @@ textarea {
   background: #00D98C;
   box-shadow: 0 4px 0 #00c57f;
   border-radius: 8px;
+  border-color: #00c57f;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 1.25rem;
   text-decoration: none;
   color: white;
   width: fit-content;
@@ -10368,6 +10373,7 @@ textarea {
 
 .btn-primary:hover {
   background: #00c57f;
+  border-color: #00c57f;
   box-shadow: 0 4px 0 #00af71; }
 
 .tag {
@@ -10481,5 +10487,31 @@ footer hr {
     padding: 24px; } }
 .swiper-container-free-mode > .swiper-wrapper {
   transition-timing-function: linear; }
+
+.form-control {
+  border: 1px solid #415d78;
+  padding: 16px;
+  border-radius: 8px;
+  color: #052646; }
+
+.form-select option:disabled, .form-select.form-control {
+  color: #8293A2; }
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8293A2;
+  opacity: 1;
+  /* Firefox */ }
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #8293A2; }
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #8293A2; }
+
+select:disabled {
+  color: #8293A2; }
 
 /*# sourceMappingURL=style.css.map */
