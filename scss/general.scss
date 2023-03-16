@@ -1,0 +1,141 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-blue {
+  background-color: $primarias---azul--primario;
+}
+.bg-light {
+  background-color: $light !important;
+}
+
+
+.btn-primary {
+  padding: 16px 32px 16px 32px;
+  background: #00D98C;
+  box-shadow: 0 4px 0 $primarias---verde--secundario;
+  border-radius: 8px;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  color: $branco;
+  width: fit-content;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: $primarias---verde--secundario;
+  box-shadow: 0 4px 0 $primarias---verde--escuro;
+}
+
+.tag {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 26px;
+  width: 100%;
+  background: #E6F3FF;
+  box-shadow: 0 0 0 #0084FF;
+  border-radius: 100px;
+  color: #00C57F;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: $desktop---h4;
+  text-decoration: none;
+  color: $primarias---azul--primario;
+}
+@media (max-width: 768px) {
+  .tag {
+    font-size: 0.9rem;
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 16px !important
+}
+
+.card-body {
+    padding: 0 32px;
+}
+.card-header {
+  background: #fff;
+  border: none;
+  padding: 32px 32px 16px 32px;
+}
+.card-header:first-child {
+    border-radius: 16px !important
+}
+.card-footer {
+  background: #fff;
+  border: none;
+  padding: 16px 32px 32px 32px;
+
+}
+
+.card-footer.card-footer:last-child {
+    border-radius: 16px !important
+}
+
+.svg-wrapper {
+  position: absolute;
+  z-index: 1;
+}
+
+.svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 79px;
+}
+.accordion-item {
+  border-radius: 16px;
+  box-shadow: $shadow--base;
+}
+
+.accordion-item:first-of-type {
+    border-radius: 16px;
+}
+.accordion-header {
+    margin-bottom: 0;
+      border-radius: 16px;
+}
+
+.accordion-item:first-of-type .accordion-button, .accordion-item .accordion-button {
+    border-radius: 16px;
+    text-transform: none;
+    padding: 32px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $primarias---azul--primario;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.accordion-body {
+  padding: 24px;
+  padding-top: 0;
+  color: $escala-de--cinza---cinza--primario;
+  font-size: $mobile---p2;
+    border-radius: 16px;
+}
+.accordion-button::after {
+    background-image: url(../images/icones/open.svg)
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/icones/close.svg)
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 16px;
+}
+
+footer hr {
+  border-color: $escala-de--cinza---cinza--azulado;
+}
